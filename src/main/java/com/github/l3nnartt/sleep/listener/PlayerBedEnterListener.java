@@ -16,6 +16,8 @@ public class PlayerBedEnterListener implements Listener {
 
   @EventHandler
   public void playerEnterBed(PlayerBedEnterEvent event) {
+    if (event.isCancelled()) return;
+
     Player player = event.getPlayer();
     World world = event.getPlayer().getWorld();
 
