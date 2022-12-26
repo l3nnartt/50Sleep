@@ -1,0 +1,8 @@
+name: 50Sleep
+version: '${version}'
+main: com.github.l3nnartt.sleep.Sleep
+api-version: 1.19
+prefix: 50Sleep
+load: STARTUP
+authors: [ L3nnart_ ]
+description: ja damit nur 50% schlafen müssen
