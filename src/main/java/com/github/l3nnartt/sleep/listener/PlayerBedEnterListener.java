@@ -25,7 +25,7 @@ public class PlayerBedEnterListener implements Listener {
     sleep.setPlayersSleeping(sleep.getPlayersSleeping() + 1);
     world.getPlayers().forEach(p -> p.sendMessage("Sleeping " + sleep.getPlayersSleeping() + "/" + sleep.getPlayersSleepNeeded()));
 
-    if (sleep.getPlayersSleeping() > sleep.getPlayersSleepNeeded()) {
+    if (sleep.getPlayersSleeping() >= sleep.getPlayersSleepNeeded()) {
       event.getPlayer().getWorld().setTime(0);
       world.getPlayers().forEach(p -> p.sendMessage(sleep.getPlayersSleeping() + "/" + sleep.getPlayersSleepNeeded() + "sleeping, skipping to day!"));
     }
